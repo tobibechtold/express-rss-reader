@@ -1,0 +1,18 @@
+head {
+    margin: 0 10% 0 10%;
+}
+
+body {
+    font-family: Lato;
+    margin: 0 10% 0 10%;
+}
+
+.article-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article {
+    background-color: lightgray;
+    margin: 32px 0 32px 0;
+}

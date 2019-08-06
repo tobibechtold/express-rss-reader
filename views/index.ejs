@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title> expresss-rss-reader </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Express RSS Reader powered by node.js</h2>
+    <% for( var i = 0; i < feedItems.length; i++){ %>
+        <div class="article">
+            <div class="article-header">
+                <%- feedItems[i].title %>
+            </div>
+            <div class="article-description">
+                <%- feedItems[i].description %>
+            </div>
+        </div>
+    <% } %>
+</body>
+
+</html>
