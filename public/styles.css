@@ -1,18 +1,36 @@
 head {
-    margin: 0 10% 0 10%;
+    margin: 0 20% 0 20%;
+    background-color: #0B0C10;
+    color: white
 }
 
 body {
-    font-family: Lato;
-    margin: 0 10% 0 10%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20% 0 20%;
+    background-color: #0B0C10;
+}
+
+a {
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+    color: #66FCF1
 }
 
 .article-header {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    color: #66FCF1
+}
+
+.article-description {
+    color: white;
 }
 
 .article {
-    background-color: lightgray;
     margin: 32px 0 32px 0;
+    background-color: #1F2833;
+    padding: 5px 5px 5px 5px;
 }
