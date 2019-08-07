@@ -8,26 +8,26 @@
 
 <body>
     <h1 class="title">Express RSS Reader powered by node.js</h1>
-    <% for( var i = 0; i < feedItems.length; i++){ %>
+    <% feedItems.forEach(feedItem => { %>
     <div class="article">
         <div class="article-header">
             <div class="article-header-image">
-                <img src="<%= feedItems[i].enclosures[0].url %>">
+                <img src="<%= feedItem.enclosures[0].url %>">
             </div>
             <div class="article-header-title-wrapper">
                 <div class="article-header-title">
-                    <%- feedItems[i].title %>
+                    <%- feedItem.title %>
                 </div>
                 <div class="article-header-created">
-                    <%- moment(new Date(feedItems[i].created)).format('LLLL'); %>
+                    <%- moment(new Date(feedItem.created)).format('LLLL'); %>
                 </div>
             </div>
         </div>
         <div class="article-description">
-            <%- feedItems[i].description %>
+            <%- feedItem.description %>
         </div>
     </div>
-    <% } %>
+    <% }); %>
 </body>
 
 </html>
