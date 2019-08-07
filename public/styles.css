@@ -9,7 +9,7 @@
     }
 
     .article-header-title {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 } 
 
@@ -24,7 +24,7 @@
     }
 
     .article-header-title {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 } 
 
