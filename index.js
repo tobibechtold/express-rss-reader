@@ -10,7 +10,6 @@ app.get('/', (req, res) => {
         var feedItems = rss;
         res.render('index', {feedItems: feedItems.items, moment: moment});
     });
-    
 });
 
 app.listen(3000, () => {
