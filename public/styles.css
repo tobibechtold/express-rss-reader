@@ -20,9 +20,33 @@ a {
 }
 
 .article-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-header-image {
+    width: 20%;
+}
+
+.article-header-image > img{
+    height: auto;
+    width: 100%;
+}
+
+.article-header-title-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.article-header-title {
     font-size: 32px;
     font-weight: bold;
     color: #45A29E
+}
+
+.article-header-created {
+    color: white;
 }
 
 .article-description {
@@ -32,5 +56,5 @@ a {
 .article {
     margin: 32px 0 32px 0;
     background-color: #1F2833;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
 }
