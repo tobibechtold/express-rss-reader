@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="de">
-
 <head>
     <title> Express-rss-reader </title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="/styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
 <body>
-    <h1 class="title">Express RSS Reader powered by node.js</h1>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="/app-icon.png" width="32" height="32" class="d-inline-block align-top" alt="">
+            Express RSS Reader
+        </a>
+    </nav>
     <div class="feed">
         <% feedItems.forEach(feedItem => { %>
             <div class="card article">
@@ -33,6 +33,4 @@
         </div>
     </footer>
 </body>
-
-
 </html>
