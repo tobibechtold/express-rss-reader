@@ -1,33 +1,30 @@
-<html>
+<!doctype html>
+<html lang="de">
 
 <head>
     <title> Express-rss-reader </title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <h1 class="title">Express RSS Reader powered by node.js</h1>
-    <% feedItems.forEach(feedItem => { %>
-    <div class="article">
-        <div class="article-header">
-            <div class="article-header-image">
-                <img src="<%= feedItem.enclosures[0].url %>">
-            </div>
-            <div class="article-header-title-wrapper">
-                <div class="article-header-title">
-                    <%- feedItem.title %>
-                </div>
-                <div class="article-header-created">
-                    <%- moment(new Date(feedItem.created)).format('LLLL'); %>
+    <div class="feed">
+        <% feedItems.forEach(feedItem => { %>
+            <div class="card article">
+                <img src="<%= feedItem.enclosures[0].url %>" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title"><%- feedItem.title %></h5>
+                    <p class="card-text"><%- feedItem.description %></p>
+                    <p class="card-text"><small class="text-muted"><%- moment(new Date(feedItem.created)).format('LLLL'); %></small></p>
                 </div>
             </div>
-        </div>
-        <div class="article-description">
-            <%- feedItem.description %>
-        </div>
+        <% }); %>
     </div>
-    <% }); %>
     <footer>
         <div id="app-footer">
             <a href="https://github.com/tobibechtold/express-rss-reader" target="_blank">

@@ -1,76 +1,3 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 0 1% 0 1%;
-    }
-
-    head {
-        margin: 0 1% 0 1%;
-    }
-
-    .article-header-title {
-        font-size: 3rem !important;
-    }
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    body {
-        margin: 0 1% 0 1%;
-    }
-
-    head {
-        margin: 0 1% 0 1%;
-    }
-
-    .article-header-title {
-        font-size: 3rem !important;
-    }
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    body {
-        margin: 0 1% 0 1%;
-    }
-
-    head {
-        margin: 0 1% 0 1%;
-    }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        margin: 0 20% 0 20%;
-    }
-
-    head {
-        margin: 0 20% 0 20%;
-    }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
-        margin: 0 20% 0 20%;
-    }
-
-    head {
-        margin: 0 20% 0 20%;
-    }
-}
-
-head {
-    background-color: #0B0C10;
-    color: white
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #0B0C10;
-}
-
 footer {
     padding: 12px;
 }
@@ -82,51 +9,24 @@ footer {
     align-items: center;
 }
 
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+}
+
 a {
     color: white;
 }
 
-.title {
-    font-weight: bold;
-    color: white;
-}
-
-.article-header {
-    display: flex;
-    flex-direction: row;
-}
-
-.article-header-image {
-    width: 30%;
-}
-
-.article-header-image > img{
-    height: auto;
+.article {
+    margin: 1rem 0 1rem 0;
     width: 100%;
 }
 
-.article-header-title-wrapper {
-    flex-grow: 1;
-    max-width: 70%;
-    margin-left: 10px;
-}
-
-.article-header-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #45A29E
-}
-
-.article-header-created {
-    color: white;
-}
-
-.article-description {
-    color: white;
-}
-
-.article {
-    margin: 32px 0 32px 0;
-    background-color: #1F2833;
-    padding: 10px;
-}
+@media (min-width: 960px) {
+    .article {
+        width: 960px;
+    }
+} 
