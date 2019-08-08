@@ -7,4 +7,4 @@ This is a small sample project for me to learn something new about vanilla node.
 The app is currently deployed at: https://protected-chamber-25671.herokuapp.com/
 
 ## run locally
-`npm run dev`
+`npm run dev` and navigate to http://localhost:3000
